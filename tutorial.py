@@ -9,4 +9,4 @@ def home():
 if __name__ == "__main__":
     app.run()
 
-print("New Version 1.02")
+print("New Version 1.04")
