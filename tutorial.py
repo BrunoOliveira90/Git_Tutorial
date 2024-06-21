@@ -1,12 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template, url_for
 
-app = Flask(__main__)
+app = Flask(__name__)
 
-def home():
-    return ""
+@app.route("/")
+def index():
+    return render_template("tutorial.html")
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 print("New Version 1.03")
