@@ -6,8 +6,5 @@ app = Flask(__name__)
 def index():
     return render_template("tutorial.html")
 
-
 if __name__ == "__main__":
     app.run(debug=True)
-
-print("New Version 1.03")
